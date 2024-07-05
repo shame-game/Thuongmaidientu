@@ -44,6 +44,11 @@
 		!function (i, n) { var o, s, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === r[t] }) } function u(e, t, n) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b") }return !1 } function f(e, t, n) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"), a = r.getContext("2d", { willReadFrequently: !0 }), o = (a.textBaseline = "top", a.font = "600 32px Arial", {}); return e.forEach(function (e) { o[e] = t(a, e, n) }), o } function t(e) { var t = i.createElement("script"); t.src = e, t.defer = !0, i.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { i.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));", r = new Blob([e], { type: "text/javascript" }), a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" }); return void (a.onmessage = function (e) { c(n = e.data), a.terminate(), t(n) }) } catch (e) { } c(n = f(s, u, p)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);
 		/* ]]> */
 	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
 	<style id='wp-emoji-styles-inline-css' type='text/css'>
 		img.wp-smiley,
 		img.emoji {
@@ -1120,7 +1125,7 @@
 									<a href="./dai-hoc-hoc-vien" class="nav-top-link">Tổng quan về khoa</a>
 								</li>
 								<li id="menu-item-650" class="menu-item ">
-									<a href="./tatcatintuc" class="nav-top-link">Tất cả tin tức</a>
+									<a href="./author/admin" class="nav-top-link">Tất cả tin tức</a>
 								</li>
 							</ul>
 						</div>
@@ -1131,8 +1136,7 @@
 								<li class="header-search-form search-form html relative has-icon">
 									<div class="header-search-form-wrapper">
 										<div class="searchform-wrapper ux-search-box relative is-normal">
-											<form method="get" class="searchform" action="https://tmdt.s4h.edu.vn/"
-												role="search">
+											<form method="get" class="searchform" role="search">
 												<div class="flex-row relative">
 													<div class="flex-col flex-grow">
 														<input type="search" class="search-field mb-0" name="s" value=""
@@ -1371,220 +1375,7 @@
 
 										<div class="col post-item" data-animate="fadeInUp">
 											<div class="col-inner">
-												<a href="2023/10/02/review-truong-dai-hoc-bach-khoa-ha-noi-hust/index.html"
-													class="plain">
-													<div class="box box-normal box-text-bottom box-blog-post has-hover">
-														<div class="box-image">
-															<div class="image-cover" style="padding-top:56.25%;">
-																<img decoding="async" width="575" height="400"
-																	src="wp-content/uploads/2023/10/dhbkhn-6920-1658994052-1-16702134834751920701721-575x400.jpg"
-																	class="attachment-medium size-medium wp-post-image"
-																	alt="" />
-															</div>
-														</div><!-- .box-image -->
-														<div class="box-text text-left">
-															<div class="box-text-inner blog-post-inner">
-
-
-																<h5 class="post-title is-large uppercase">Review Trường
-																	Đại học Bách Khoa Hà Nội (HUST)</h5>
-																<div class="is-divider"></div>
-																<p class="from_the_blog_excerpt ">&nbsp; Review Trường
-																	Đại học Bách Khoa Hà Nội (HUST) có tốt không? Trường
-																	Đại [...] </p>
-
-																<button
-																	href="2023/10/02/review-truong-dai-hoc-bach-khoa-ha-noi-hust/index.html"
-																	class="button primary is-outline is-small mb-0">
-																	đọc </button>
-
-
-															</div><!-- .box-text-inner -->
-														</div><!-- .box-text -->
-														<div class="badge absolute top post-date badge-outline">
-															<div class="badge-inner">
-																<span class="post-date-day">02</span><br>
-																<span class="post-date-month is-xsmall">Th10</span>
-															</div>
-														</div>
-													</div><!-- .box -->
-												</a><!-- .link -->
-											</div><!-- .col-inner -->
-										</div><!-- .col -->
-										<div class="col post-item" data-animate="fadeInUp">
-											<div class="col-inner">
-												<a href="2023/10/02/review-truong-dai-hoc-bach-khoa-da-nang-dut/index.html"
-													class="plain">
-													<div class="box box-normal box-text-bottom box-blog-post has-hover">
-														<div class="box-image">
-															<div class="image-cover" style="padding-top:56.25%;">
-																<img decoding="async" width="533" height="400"
-																	src="wp-content/uploads/2023/10/dai-hoc-bach-khoa-da-nang-dut-2-533x400.webp"
-																	class="attachment-medium size-medium wp-post-image"
-																	alt="" />
-															</div>
-														</div><!-- .box-image -->
-														<div class="box-text text-left">
-															<div class="box-text-inner blog-post-inner">
-
-
-																<h5 class="post-title is-large uppercase">Review Trường
-																	Đại học Bách khoa – Đà Nẵng (DUT)</h5>
-																<div class="is-divider"></div>
-																<p class="from_the_blog_excerpt ">Review Trường Đại học
-																	Bách khoa – Đà Nẵng (DUT) có tốt không? Những năm
-																	[...] </p>
-
-																<button
-																	href="2023/10/02/review-truong-dai-hoc-bach-khoa-da-nang-dut/index.html"
-																	class="button primary is-outline is-small mb-0">
-																	đọc </button>
-
-
-															</div><!-- .box-text-inner -->
-														</div><!-- .box-text -->
-														<div class="badge absolute top post-date badge-outline">
-															<div class="badge-inner">
-																<span class="post-date-day">02</span><br>
-																<span class="post-date-month is-xsmall">Th10</span>
-															</div>
-														</div>
-													</div><!-- .box -->
-												</a><!-- .link -->
-											</div><!-- .col-inner -->
-										</div><!-- .col -->
-										<div class="col post-item" data-animate="fadeInUp">
-											<div class="col-inner">
-												<a href="2023/10/02/review-truong-dai-hoc-tra-vinh-tvu/index.html"
-													class="plain">
-													<div class="box box-normal box-text-bottom box-blog-post has-hover">
-														<div class="box-image">
-															<div class="image-cover" style="padding-top:56.25%;">
-																<img loading="lazy" decoding="async" width="668"
-																	height="400"
-																	src="wp-content/uploads/2023/10/da-hoc-tra-vinh-3-1-668x400.webp"
-																	class="attachment-medium size-medium wp-post-image"
-																	alt="" />
-															</div>
-														</div><!-- .box-image -->
-														<div class="box-text text-left">
-															<div class="box-text-inner blog-post-inner">
-
-
-																<h5 class="post-title is-large uppercase">Review Trường
-																	Đại học Trà Vinh (TVU)</h5>
-																<div class="is-divider"></div>
-																<p class="from_the_blog_excerpt ">Review Trường Đại học
-																	Trà Vinh (TVU) có tốt không? Là trường Đại học duy
-																	[...] </p>
-
-																<button
-																	href="2023/10/02/review-truong-dai-hoc-tra-vinh-tvu/index.html"
-																	class="button primary is-outline is-small mb-0">
-																	đọc </button>
-
-
-															</div><!-- .box-text-inner -->
-														</div><!-- .box-text -->
-														<div class="badge absolute top post-date badge-outline">
-															<div class="badge-inner">
-																<span class="post-date-day">02</span><br>
-																<span class="post-date-month is-xsmall">Th10</span>
-															</div>
-														</div>
-													</div><!-- .box -->
-												</a><!-- .link -->
-											</div><!-- .col-inner -->
-										</div><!-- .col -->
-										<div class="col post-item" data-animate="fadeInUp">
-											<div class="col-inner">
-												<a href="2023/10/02/review-truong-dai-hoc-can-tho-ctu/index.html"
-													class="plain">
-													<div class="box box-normal box-text-bottom box-blog-post has-hover">
-														<div class="box-image">
-															<div class="image-cover" style="padding-top:56.25%;">
-																<img loading="lazy" decoding="async" width="600"
-																	height="399"
-																	src="wp-content/uploads/2023/10/dai-hoc-can-tho-ctu.2-1.webp"
-																	class="attachment-medium size-medium wp-post-image"
-																	alt="" />
-															</div>
-														</div><!-- .box-image -->
-														<div class="box-text text-left">
-															<div class="box-text-inner blog-post-inner">
-
-
-																<h5 class="post-title is-large uppercase">Review Trường
-																	Đại học Cần Thơ (CTU)</h5>
-																<div class="is-divider"></div>
-																<p class="from_the_blog_excerpt ">&nbsp; Review Trường
-																	Đại học Cần Thơ (CTU) có tốt không? Trường Đại học
-																	Cần [...] </p>
-
-																<button
-																	href="2023/10/02/review-truong-dai-hoc-can-tho-ctu/index.html"
-																	class="button primary is-outline is-small mb-0">
-																	đọc </button>
-
-
-															</div><!-- .box-text-inner -->
-														</div><!-- .box-text -->
-														<div class="badge absolute top post-date badge-outline">
-															<div class="badge-inner">
-																<span class="post-date-day">02</span><br>
-																<span class="post-date-month is-xsmall">Th10</span>
-															</div>
-														</div>
-													</div><!-- .box -->
-												</a><!-- .link -->
-											</div><!-- .col-inner -->
-										</div><!-- .col -->
-										<div class="col post-item" data-animate="fadeInUp">
-											<div class="col-inner">
-												<a href="2023/10/02/review-truong-dai-hoc-su-pham-ha-noi-hnue/index.html"
-													class="plain">
-													<div class="box box-normal box-text-bottom box-blog-post has-hover">
-														<div class="box-image">
-															<div class="image-cover" style="padding-top:56.25%;">
-																<img loading="lazy" decoding="async" width="708"
-																	height="400"
-																	src="wp-content/uploads/2023/10/dai-hoc-su-pham-ha-noi-4-1-708x400.webp"
-																	class="attachment-medium size-medium wp-post-image"
-																	alt="" />
-															</div>
-														</div><!-- .box-image -->
-														<div class="box-text text-left">
-															<div class="box-text-inner blog-post-inner">
-
-
-																<h5 class="post-title is-large uppercase">Review Trường
-																	Đại học Sư phạm Hà Nội (HNUE)</h5>
-																<div class="is-divider"></div>
-																<p class="from_the_blog_excerpt ">&nbsp; Review Trường
-																	Đại học Sư phạm Hà Nội (HNUE) có tốt không? Đại học
-																	[...] </p>
-
-																<button
-																	href="2023/10/02/review-truong-dai-hoc-su-pham-ha-noi-hnue/index.html"
-																	class="button primary is-outline is-small mb-0">
-																	đọc </button>
-
-
-															</div><!-- .box-text-inner -->
-														</div><!-- .box-text -->
-														<div class="badge absolute top post-date badge-outline">
-															<div class="badge-inner">
-																<span class="post-date-day">02</span><br>
-																<span class="post-date-month is-xsmall">Th10</span>
-															</div>
-														</div>
-													</div><!-- .box -->
-												</a><!-- .link -->
-											</div><!-- .col-inner -->
-										</div><!-- .col -->
-										<div class="col post-item" data-animate="fadeInUp">
-											<div class="col-inner">
-												<a href="2023/10/02/review-truong-dai-hoc-ngoai-thuong-ftu/index.html"
+												<a href="2023/10/03/vi-sao-nen-chon-hoc-tai-dai-hoc-dong-a-top-nhung-ly-do-nen-chon-dai-hoc-dong-a/index.html"
 													class="plain">
 													<div class="box box-normal box-text-bottom box-blog-post has-hover">
 														<div class="box-image">
@@ -1608,7 +1399,136 @@
 																	Ngoại thương [...] </p>
 
 																<button
-																	href="2023/10/02/review-truong-dai-hoc-ngoai-thuong-ftu/index.html"
+																	href="2023/10/03/vi-sao-nen-chon-hoc-tai-dai-hoc-dong-a-top-nhung-ly-do-nen-chon-dai-hoc-dong-a/index.html"
+																	class="button primary is-outline is-small mb-0">
+																	đọc </button>
+
+
+															</div><!-- .box-text-inner -->
+														</div><!-- .box-text -->
+														<div class="badge absolute top post-date badge-outline">
+															<div class="badge-inner">
+																<span class="post-date-day">02</span><br>
+																<span class="post-date-month is-xsmall">Th10</span>
+															</div>
+														</div>
+													</div><!-- .box -->
+												</a><!-- .link -->
+											</div><!-- .col-inner -->
+										</div><!-- .col -->
+										<div class="col post-item" data-animate="fadeInUp">
+											<div class="col-inner">
+												<a href="2023/10/03/vi-sao-nen-chon-hoc-tai-dai-hoc-dong-a-top-nhung-ly-do-nen-chon-dai-hoc-dong-a/index.html"
+													class="plain">
+													<div class="box box-normal box-text-bottom box-blog-post has-hover">
+														<div class="box-image">
+															<div class="image-cover" style="padding-top:56.25%;">
+																<img loading="lazy" decoding="async" width="580"
+																	height="326"
+																	src="wp-content/uploads/2023/10/dai-hoc-ngoai-thuong-1-1.webp"
+																	class="attachment-medium size-medium wp-post-image"
+																	alt="" />
+															</div>
+														</div><!-- .box-image -->
+														<div class="box-text text-left">
+															<div class="box-text-inner blog-post-inner">
+
+
+																<h5 class="post-title is-large uppercase">Review Trường
+																	Đại học Ngoại thương (FTU)</h5>
+																<div class="is-divider"></div>
+																<p class="from_the_blog_excerpt ">&nbsp; Review Trường
+																	Đại học Ngoại thương (FTU) có tốt không? Đại học
+																	Ngoại thương [...] </p>
+
+																<button
+																	href="2023/10/03/vi-sao-nen-chon-hoc-tai-dai-hoc-dong-a-top-nhung-ly-do-nen-chon-dai-hoc-dong-a/index.html"
+																	class="button primary is-outline is-small mb-0">
+																	đọc </button>
+
+
+															</div><!-- .box-text-inner -->
+														</div><!-- .box-text -->
+														<div class="badge absolute top post-date badge-outline">
+															<div class="badge-inner">
+																<span class="post-date-day">02</span><br>
+																<span class="post-date-month is-xsmall">Th10</span>
+															</div>
+														</div>
+													</div><!-- .box -->
+												</a><!-- .link -->
+											</div><!-- .col-inner -->
+										</div><!-- .col -->
+										<div class="col post-item" data-animate="fadeInUp">
+											<div class="col-inner">
+												<a href="2023/10/03/vi-sao-nen-chon-hoc-tai-dai-hoc-dong-a-top-nhung-ly-do-nen-chon-dai-hoc-dong-a/index.html"
+													class="plain">
+													<div class="box box-normal box-text-bottom box-blog-post has-hover">
+														<div class="box-image">
+															<div class="image-cover" style="padding-top:56.25%;">
+																<img loading="lazy" decoding="async" width="580"
+																	height="326"
+																	src="wp-content/uploads/2023/10/dai-hoc-ngoai-thuong-1-1.webp"
+																	class="attachment-medium size-medium wp-post-image"
+																	alt="" />
+															</div>
+														</div><!-- .box-image -->
+														<div class="box-text text-left">
+															<div class="box-text-inner blog-post-inner">
+
+
+																<h5 class="post-title is-large uppercase">Review Trường
+																	Đại học Ngoại thương (FTU)</h5>
+																<div class="is-divider"></div>
+																<p class="from_the_blog_excerpt ">&nbsp; Review Trường
+																	Đại học Ngoại thương (FTU) có tốt không? Đại học
+																	Ngoại thương [...] </p>
+
+																<button
+																	href="2023/10/03/vi-sao-nen-chon-hoc-tai-dai-hoc-dong-a-top-nhung-ly-do-nen-chon-dai-hoc-dong-a/index.html"
+																	class="button primary is-outline is-small mb-0">
+																	đọc </button>
+
+
+															</div><!-- .box-text-inner -->
+														</div><!-- .box-text -->
+														<div class="badge absolute top post-date badge-outline">
+															<div class="badge-inner">
+																<span class="post-date-day">02</span><br>
+																<span class="post-date-month is-xsmall">Th10</span>
+															</div>
+														</div>
+													</div><!-- .box -->
+												</a><!-- .link -->
+											</div><!-- .col-inner -->
+										</div><!-- .col -->
+										<div class="col post-item" data-animate="fadeInUp">
+											<div class="col-inner">
+												<a href="2023/10/03/vi-sao-nen-chon-hoc-tai-dai-hoc-dong-a-top-nhung-ly-do-nen-chon-dai-hoc-dong-a/index.html"
+													class="plain">
+													<div class="box box-normal box-text-bottom box-blog-post has-hover">
+														<div class="box-image">
+															<div class="image-cover" style="padding-top:56.25%;">
+																<img loading="lazy" decoding="async" width="580"
+																	height="326"
+																	src="wp-content/uploads/2023/10/dai-hoc-ngoai-thuong-1-1.webp"
+																	class="attachment-medium size-medium wp-post-image"
+																	alt="" />
+															</div>
+														</div><!-- .box-image -->
+														<div class="box-text text-left">
+															<div class="box-text-inner blog-post-inner">
+
+
+																<h5 class="post-title is-large uppercase">Review Trường
+																	Đại học Ngoại thương (FTU)</h5>
+																<div class="is-divider"></div>
+																<p class="from_the_blog_excerpt ">&nbsp; Review Trường
+																	Đại học Ngoại thương (FTU) có tốt không? Đại học
+																	Ngoại thương [...] </p>
+
+																<button
+																	href="2023/10/03/vi-sao-nen-chon-hoc-tai-dai-hoc-dong-a-top-nhung-ly-do-nen-chon-dai-hoc-dong-a/index.html"
 																	class="button primary is-outline is-small mb-0">
 																	đọc </button>
 
@@ -2068,34 +1988,12 @@
 			<ul class="nav nav-sidebar  nav-vertical nav-uppercase">
 				<li
 					class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-649">
-					<a href="index.html" class="nav-top-link">Review Đại Học</a>
-					<ul class=children>
-						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-341"><a
-								href="dai-hoc-hoc-vien/index.html">Đại Học &#038; Học Viện</a></li>
-						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-340"><a
-								href="cao-dang/index.html">Cao Đẳng</a></li>
-						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-339"><a
-								href="trung-cap/index.html">Trung Cấp</a></li>
-					</ul>
+					<a href="../tmdt-cntt/dai-hoc-hoc-vien/" class="nav-top-link">Tổng quan về khoa</a>
 				</li>
 				<li
 					class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-650">
-					<a href="index.html" class="nav-top-link">Tuyển Sinh Đại Học</a>
+					<a href="../tmdt-cntt/author/admin" class="nav-top-link">Tất cả tin tức</a>
 				</li>
-				<li class="menu-item">
-					<a href="index.html" class="nav-top-link">Danh Sách Trường Học</a>
-					<ul class=children>
-						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-331"><a
-								href="truong-mam-non/index.html">Trường Mầm Non</a></li>
-						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-330"><a
-								href="truong-tieu-hoc/index.html">Trường Tiểu Học</a></li>
-						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-329"><a
-								href="truong-thcs/index.html">Trường THCS</a></li>
-						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-328"><a
-								href="truong-thpt/index.html">Trường THPT</a></li>
-					</ul>
-				</li>
-				<li class="header-divider"></li>WooCommerce not Found
 			</ul>
 		</div><!-- inner -->
 	</div><!-- #mobile-menu -->
