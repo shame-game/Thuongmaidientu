@@ -1,0 +1,1 @@
+$(document).ready(function(){$('.sidebar__sections--item').each(function(){console.log(this);$(this).click(function(){$('.sidebar__sections--item').removeClass('active');$(this).addClass('active');});});});

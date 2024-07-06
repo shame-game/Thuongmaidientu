@@ -1,0 +1,5 @@
+window.addEventListener("load",()=>{const $=document.querySelector.bind(document);const $$=document.querySelectorAll.bind(document);const tabLinks=$$(".tab-link")
+const tabContents=$$(".tabs-content")
+tabLinks.forEach((item,indexLink)=>item.addEventListener("click",function(){tabLinks.forEach(item=>item.classList.remove('active'))
+this.classList.add('active')
+tabContents.forEach((item,indexContent)=>{if(indexLink===indexContent){item.classList.add('active')}else{item.classList.remove('active')}})}))})
