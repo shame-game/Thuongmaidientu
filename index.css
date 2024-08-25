@@ -1,8 +1,12 @@
 @charset "UTF-8";
-@import url("../../use.typekit.net/ryj0kai.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --text-white: white
+    --text-white: white;
+}
+
+html {
+    font-family: "Roboto", sans-serif !important;
 }
 
 img.wp-smiley,
@@ -16310,11 +16314,11 @@ body {
 }
 
 .j_ff-gara {
-    font-family: 'garamond-premier-pro', serif
+    font-family: "Roboto", sans-serif;
 }
 
 .j_ff-hal {
-    font-family: 'halyard-display', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-variant-numeric: normal
 }
 
@@ -17954,7 +17958,7 @@ body {
     }
 
     .james__intro .james__intro--slider .item .item_wrapper .meta_info h3 {
-        font-size: 96px;
+        font-size: 58px;
         line-height: 100px
     }
 
@@ -20231,7 +20235,7 @@ body {
     }
 
     .type-block.teaser div.block-inner h2 {
-        font: 400 36px/40px 'garamond-premier-pro', serif
+        font: 400 36px/40px 'roboto', serif
     }
 
     .james__about .title_block {
@@ -21663,7 +21667,7 @@ p {
 }
 
 .amount .amount__item .number {
-    font: 72px/82px 'garamond-premier-pro', serif;
+    font: 72px/82px 'roboto', serif;
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
@@ -22755,7 +22759,7 @@ p {
     }
 
     .amount .amount__item .number {
-        font: 48px/60px 'garamond-premier-pro', serif;
+        font: 48px/60px 'roboto', serif;
         margin-bottom: 0
     }
 
@@ -23024,11 +23028,11 @@ p {
     }
 
     .amount .amount__item .number {
-        font: 48px/60px 'garamond-premier-pro', serif;
-        -webkit-font: 48px/60px 'garamond-premier-pro', serif;
-        -moz-font: 48px/60px 'garamond-premier-pro', serif;
-        -ms-font: 48px/60px 'garamond-premier-pro', serif;
-        -o-font: 48px/60px 'garamond-premier-pro', serif
+        font: 48px/60px 'roboto', serif;
+        -webkit-font: 48px/60px 'roboto', serif;
+        -moz-font: 48px/60px 'roboto', serif;
+        -ms-font: 48px/60px 'roboto', serif;
+        -o-font: 48px/60px 'roboto', serif
     }
 
     .amount .amount__item .desc {
@@ -26398,7 +26402,7 @@ a#back-to-top.active {
 }
 
 #core-team h2 {
-    font: 35px/38px 'garamond-premier-pro', serif
+    font: 35px/38px 'roboto', serif
 }
 
 #co-chairs {
@@ -26408,7 +26412,7 @@ a#back-to-top.active {
 }
 
 #co-chairs h2 {
-    font: 35px/38px 'garamond-premier-pro', serif
+    font: 35px/38px 'roboto', serif
 }
 
 #vietnam-based {
@@ -26418,7 +26422,7 @@ a#back-to-top.active {
 }
 
 #vietnam-based h2 {
-    font: 35px/38px 'garamond-premier-pro', serif
+    font: 35px/38px 'roboto', serif
 }
 
 #usinternational-candidates {
@@ -26428,7 +26432,7 @@ a#back-to-top.active {
 }
 
 #usinternational-candidates h2 {
-    font: 35px/38px 'garamond-premier-pro', serif
+    font: 35px/38px 'roboto', serif
 }
 
 #student-affairs-services-team {
@@ -26985,14 +26989,14 @@ h6 {
 }
 
 h1 {
-    font: 60px/62px 'garamond-premier-pro', serif;
+    font: 60px/62px 'Roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums;
     letter-spacing: -.02em;
     color: #00196e
 }
 
 h2 {
-    font: 35px/38px 'garamond-premier-pro', serif;
+    font: 35px/38px 'Roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums;
     letter-spacing: -.02em;
     color: #00196e
@@ -27002,7 +27006,7 @@ h3,
 h4,
 h5,
 h6 {
-    font: 22px/26px 'garamond-premier-pro', serif;
+    font: 22px/26px 'Roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums;
     letter-spacing: -.02em;
     color: #00196e
@@ -27014,7 +27018,7 @@ strong {
 }
 
 p.intro {
-    font: 400 35px/38px 'garamond-premier-pro', serif;
+    font: 400 35px/38px 'Roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums;
     letter-spacing: -.02em
 }
@@ -27024,7 +27028,7 @@ p.caption {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    font-family: 'halyard-display', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-feature-settings: 'ss15'
 }
 
@@ -28051,14 +28055,14 @@ body.lock_body {
 }
 
 article.full {
-    font: 400 24px/30px 'garamond-premier-pro', serif;
+    font: 400 24px/30px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums;
     letter-spacing: -.02em
 }
 
 @media only screen and (min-width:769px) {
     article.full {
-        font: 400 22px/26px 'garamond-premier-pro', serif;
+        font: 400 22px/26px 'roboto', serif;
         font-variant-numeric: oldstyle-nums proportional-nums
     }
 }
@@ -28326,7 +28330,7 @@ article.full .hero .hero-content .inner img {
 }
 
 article.full .hero .hero-content .inner>h2 {
-    font: 36px/29px 'garamond-premier-pro', serif;
+    font: 36px/29px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums;
     letter-spacing: -.02em;
     margin: 0 0 16px;
@@ -28335,7 +28339,7 @@ article.full .hero .hero-content .inner>h2 {
 
 @media only screen and (min-width:769px) {
     article.full .hero .hero-content .inner>h2 {
-        font: 35px/29px 'garamond-premier-pro', serif;
+        font: 35px/29px 'roboto', serif;
         font-variant-numeric: oldstyle-nums proportional-nums;
         margin: 0 0 10px
     }
@@ -28343,7 +28347,7 @@ article.full .hero .hero-content .inner>h2 {
 
 article.full .hero .hero-content .inner .text {
     max-width: 842px;
-    font: 24px/30px 'garamond-premier-pro', serif;
+    font: 24px/30px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums;
     letter-spacing: -.02em;
     margin: 0
@@ -28351,7 +28355,7 @@ article.full .hero .hero-content .inner .text {
 
 @media only screen and (min-width:769px) {
     article.full .hero .hero-content .inner .text {
-        font: 20px/24px 'garamond-premier-pro', serif;
+        font: 20px/24px 'roboto', serif;
         font-variant-numeric: oldstyle-nums proportional-nums
     }
 }
@@ -28474,7 +28478,7 @@ article.full .sections section {
 }
 
 article.full .sections section .inner>h2 {
-    font: 400 36px/40px 'garamond-premier-pro', serif;
+    font: 400 36px/40px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums;
     margin: 0 0 20px
 }
@@ -28527,7 +28531,7 @@ article.full .sections section .image .caption {
     }
 
     article.full .sections section .inner>h2 {
-        font: 400 60px/62px 'garamond-premier-pro', serif;
+        font: 400 60px/62px 'roboto', serif;
         font-variant-numeric: oldstyle-nums proportional-nums
     }
 
@@ -28670,12 +28674,12 @@ article.full .sections section ul.expand-list li.expand-item h3.question {
     cursor: pointer;
     padding: 0 25px 0 0;
     margin: 0;
-    font: 20px/24px 'garamond-premier-pro', serif;
+    font: 20px/24px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums
 }
 
 article.full .sections section ul.expand-list li.expand-item .answer {
-    font: 400 24px/30px 'garamond-premier-pro', serif;
+    font: 400 24px/30px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums;
     letter-spacing: -.02em;
     position: relative;
@@ -28685,7 +28689,7 @@ article.full .sections section ul.expand-list li.expand-item .answer {
 
 @media only screen and (min-width:769px) {
     article.full .sections section ul.expand-list li.expand-item .answer {
-        font: 400 20px/24px 'garamond-premier-pro', serif;
+        font: 400 20px/24px 'roboto', serif;
         font-variant-numeric: oldstyle-nums proportional-nums;
         -webkit-transition: all .25s ease-in-out;
         -moz-transition: all .25s ease-in-out;
@@ -28810,7 +28814,7 @@ article.full .entry-header {
 
 article.full .entry-header h1 {
     max-width: 740px;
-    font: 400 36px/36px 'garamond-premier-pro', serif;
+    font: 400 36px/36px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums;
     color: #00196e;
     letter-spacing: -.02em;
@@ -28819,14 +28823,14 @@ article.full .entry-header h1 {
 
 @media only screen and (min-width:769px) {
     article.full .entry-header h1 {
-        font: 400 60px/62px 'garamond-premier-pro', serif;
+        font: 400 60px/62px 'roboto', serif;
         font-variant-numeric: oldstyle-nums proportional-nums
     }
 }
 
 article.full .entry-header .meta {
     color: #00196e;
-    font: 400 italic 20px/29px 'garamond-premier-pro', serif;
+    font: 400 italic 20px/29px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums
 }
 
@@ -28970,14 +28974,14 @@ article.full .timeline-wrapper .timeline ul li h4 {
 }
 
 .type-block.teaser .block-inner h2 {
-    font: 400 50px/52px 'garamond-premier-pro', serif;
+    font: 400 50px/52px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums;
     margin: 0 0 30px;
     max-width: 642px
 }
 
 .type-block.teaser .block-inner .entry-content {
-    font: italic 22px/32px 'garamond-premier-pro', serif;
+    font: italic 22px/32px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums;
     letter-spacing: .025em;
     margin: 30px 0 38px
@@ -29059,12 +29063,12 @@ article.full .timeline-wrapper .timeline ul li h4 {
     }
 
     .type-block.teaser .block-inner h2 {
-        font: 60px/62px 'garamond-premier-pro', serif;
+        font: 60px/62px 'roboto', serif;
         font-variant-numeric: oldstyle-nums proportional-nums
     }
 
     .type-block.teaser .block-inner .entry-content {
-        font: italic 35px/34px 'garamond-premier-pro', serif;
+        font: italic 35px/34px 'roboto', serif;
         font-variant-numeric: oldstyle-nums proportional-nums;
         letter-spacing: -.02em;
         margin: 30px 0 20px
@@ -29403,7 +29407,7 @@ html.js.object-fit .type-post.teaser a.teaser .thumbnail img {
     margin: 0 0 25px;
     padding: 0;
     list-style: none;
-    font: 400 22px/22px 'garamond-premier-pro', serif;
+    font: 400 22px/22px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums;
     color: #00196e
 }
@@ -29419,7 +29423,7 @@ html.js.object-fit .type-post.teaser a.teaser .thumbnail img {
 
 .type-person.full header.entry-header h1 {
     margin: 0 0 10px;
-    font: 400 36px/36px 'garamond-premier-pro', serif;
+    font: 400 36px/36px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums
 }
 
@@ -29434,7 +29438,7 @@ html.js.object-fit .type-post.teaser a.teaser .thumbnail img {
 }
 
 .type-person.full header.entry-header .position {
-    font: 400 italic 14px/24px 'garamond-premier-pro', serif;
+    font: 400 italic 14px/24px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums
 }
 
@@ -29453,13 +29457,13 @@ html.js.object-fit .type-post.teaser a.teaser .thumbnail img {
 
     .type-person.full header.entry-header ul.roles {
         margin: 0 0 30px;
-        font: 400 35px/35px 'garamond-premier-pro', serif;
+        font: 400 35px/35px 'roboto', serif;
         font-variant-numeric: oldstyle-nums proportional-nums
     }
 
     .type-person.full header.entry-header h1 {
         margin: 0 0 6px;
-        font: 400 60px/60px 'garamond-premier-pro', serif;
+        font: 400 60px/60px 'roboto', serif;
         font-variant-numeric: oldstyle-nums proportional-nums
     }
 
@@ -29471,7 +29475,7 @@ html.js.object-fit .type-post.teaser a.teaser .thumbnail img {
     }
 
     .type-person.full header.entry-header .position {
-        font: 400 italic 20px/24px 'garamond-premier-pro', serif;
+        font: 400 italic 20px/24px 'roboto', serif;
         font-variant-numeric: oldstyle-nums proportional-nums
     }
 
@@ -29567,7 +29571,7 @@ html.js.object-fit .type-post.teaser a.teaser .thumbnail img {
 #slides .slide a.image .slide-inner h3 {
     margin: 0 0 6px;
     color: #fff;
-    font: 36px/38px 'garamond-premier-pro', serif;
+    font: 36px/38px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums
 }
 
@@ -29597,7 +29601,7 @@ html.js.object-fit .type-post.teaser a.teaser .thumbnail img {
 
     #slides .slide a.image .slide-inner h3 {
         max-width: 70%;
-        font: 60px/62px 'garamond-premier-pro', serif;
+        font: 60px/62px 'roboto', serif;
         font-variant-numeric: oldstyle-nums proportional-nums
     }
 
@@ -29791,7 +29795,7 @@ html.js.object-fit .type-post.teaser a.teaser .thumbnail img {
 .type-page.page-home #slides .slide a.image .slide-inner h3 {
     margin: 0 0 6px;
     color: #fff;
-    font: 36px/38px 'garamond-premier-pro', serif;
+    font: 36px/38px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums
 }
 
@@ -29834,7 +29838,7 @@ html.js.object-fit .type-post.teaser a.teaser .thumbnail img {
     .type-post.page-home #slides .slide a.image .slide-inner h3,
     .type-page.page-home #slides .slide a.image .slide-inner h3 {
         max-width: 70%;
-        font: 60px/62px 'garamond-premier-pro', serif;
+        font: 60px/62px 'roboto', serif;
         font-variant-numeric: oldstyle-nums proportional-nums
     }
 
@@ -29862,7 +29866,7 @@ html.js.object-fit .type-post.teaser a.teaser .thumbnail img {
 .type-page.page-home #boxes h2.section-title {
     padding: 0 25px;
     margin: 0 auto 34px;
-    font: 36px/36px 'garamond-premier-pro', serif;
+    font: 36px/36px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums
 }
 
@@ -29912,7 +29916,7 @@ html.js.object-fit .type-post.teaser a.teaser .thumbnail img {
     .type-post.page-home #boxes h2.section-title,
     .type-page.page-home #boxes h2.section-title {
         margin: 0 0 30px;
-        font: 35px/35px 'garamond-premier-pro', serif;
+        font: 35px/35px 'roboto', serif;
         font-variant-numeric: oldstyle-nums proportional-nums
     }
 
@@ -29946,7 +29950,7 @@ html.js.object-fit .type-post.teaser a.teaser .thumbnail img {
 .type-page.page-home #news h2.section-title {
     padding: 0 25px;
     margin: 0 auto 34px;
-    font: 36px/36px 'garamond-premier-pro', serif;
+    font: 36px/36px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums
 }
 
@@ -29984,7 +29988,7 @@ html.js.object-fit .type-post.teaser a.teaser .thumbnail img {
     .type-post.page-home #news h2.section-title,
     .type-page.page-home #news h2.section-title {
         margin: 0 0 30px;
-        font: 35px/35px 'garamond-premier-pro', serif;
+        font: 35px/35px 'roboto', serif;
         font-variant-numeric: oldstyle-nums proportional-nums
     }
 
@@ -30192,7 +30196,7 @@ html.js.object-fit .type-post.teaser a.teaser .thumbnail img {
 .type-page.page-team header h1 {
     padding: 0 25px;
     margin: 0 0 36px;
-    font: 400 36px/40px 'garamond-premier-pro', serif;
+    font: 400 36px/40px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums
 }
 
@@ -30214,7 +30218,7 @@ html.js.object-fit .type-post.teaser a.teaser .thumbnail img {
         margin: 0;
         float: left;
         width: 46.72727273%;
-        font: 60px/62px 'garamond-premier-pro', serif;
+        font: 60px/62px 'roboto', serif;
         font-variant-numeric: oldstyle-nums proportional-nums
     }
 
@@ -30235,7 +30239,7 @@ html.js.object-fit .type-post.teaser a.teaser .thumbnail img {
 .type-page.page-team section.role h2 {
     padding: 0;
     margin: 0 25px 18px;
-    font: 36px/36px 'garamond-premier-pro', serif;
+    font: 36px/36px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums
 }
 
@@ -30306,7 +30310,7 @@ html.js.object-fit .type-post.teaser a.teaser .thumbnail img {
         padding: 17px 0 0;
         border-top: 1px solid #c8c9c7;
         margin: 0 25px;
-        font: 35px/38px 'garamond-premier-pro', serif;
+        font: 35px/38px 'roboto', serif;
         font-variant-numeric: oldstyle-nums proportional-nums
     }
 
@@ -30626,7 +30630,7 @@ article.full .hero .hero-content .inner {
     letter-spacing: -.02em;
     color: #00196e;
     margin: 0 0 24px;
-    font: 400 60px/62px 'garamond-premier-pro', serif;
+    font: 400 60px/62px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums
 }
 
@@ -30665,7 +30669,7 @@ article.full .hero .hero-content .inner {
 }
 
 .hero .hero__content .hero__content--text {
-    font: 20px/24px 'garamond-premier-pro', serif;
+    font: 20px/24px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums;
     color: #00196e;
     font-size: 33px;
@@ -30732,7 +30736,7 @@ article.full .hero .hero-content .inner {
     }
 
     .heading__global {
-        font: 400 36px/40px 'garamond-premier-pro', serif;
+        font: 400 36px/40px 'roboto', serif;
         font-variant-numeric: oldstyle-nums proportional-nums;
         margin: 0 0 20px
     }
@@ -30917,7 +30921,7 @@ article.full .hero .hero-content .inner {
 
 #cookiePopupLeft h4 {
     color: #fff;
-    font: 22px/26px 'garamond-premier-pro', serif;
+    font: 22px/26px 'roboto', serif;
     font-variant-numeric: oldstyle-nums proportional-nums;
     letter-spacing: -.02em;
     margin: 0 0 8px
@@ -31024,7 +31028,7 @@ article.full .hero .hero-content .inner .text p {
 @media screen and (max-width:768px) {
     .hero .hero__content .hero__content--text {
         max-width: 842px;
-        font: 24px/30px "garamond-premier-pro", serif;
+        font: 24px/30px "roboto", serif;
         font-variant-numeric: oldstyle-nums proportional-nums;
         letter-spacing: -.02em;
         margin: 0
@@ -31169,7 +31173,7 @@ article.full .entry-content img {
 }
 
 .hero .hero__content .hero__content--text {
-    font: 20px/24px "garamond-premier-pro", serif;
+    font: 20px/24px "roboto", serif;
     font-variant-numeric: oldstyle-nums proportional-nums;
     letter-spacing: -.02em;
     line-height: 29px
@@ -31207,7 +31211,7 @@ article.full .entry-content img {
 }
 
 .tuition .tuition__content {
-    font: 400 22px/26px "garamond-premier-pro", serif;
+    font: 400 22px/26px "roboto", serif;
     font-variant-numeric: oldstyle-nums proportional-nums;
     width: 70%;
     max-width: 70%;
@@ -37803,10 +37807,6 @@ footer .top_footer .social_media li a {
 footer .top_footer .social_media li a:hover {
     background-color: var(--bg-white);
     color: var(--purple);
-}
-
-footer .top_footer .try_out {
-    margin-left: -20px;
 }
 
 footer ul {
